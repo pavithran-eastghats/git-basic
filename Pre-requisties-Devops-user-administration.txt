@@ -1,0 +1,278 @@
+Filesystem Hierarchy standard 
+
+Boot - the director contains all the files which used when you start an server
+etc -  special directory contains all the configurations files, ex. system, network, sudovers, user 
+	database, system configurations.
+proc -  all the process related infomation will be in proc, currently running info, CPU and device 
+	related information will be available. the infomation in the runtime, we can see it in the proc. To configure enable route forwarding. Processer are running and sleeping ( PID table) will be under proc.
+Dev - Devices - all the hardware info will be available. Block device, Char spl devices(com, printer port)
+home - there will be seperate home directory for each users. ex pavithran ---> /home/pavithran
+root - /root --- Super user home director
+var - variable directory - info about logs, mail spools, print spools. data will keeps on changing.
+usr - unix system resourse - all programs will under usr. built in packges will usr
+opt - optional - 3rd party tools will be in opt. all 3rd party packges will be opt.
+run - run time programmes will be in run.
+tmp -  all the temporary files will in temporary. every restart this folder will be flased.
+mnt - mount point fo accessing the remote file system. nfs file server, usb, cd/dvd, can be mounted in.
+
+bin - basic commends
+sbin - system binarys - administrations commends
+lib - libery files 
+
+file sysytem- EXT4 / XFS
+
+there are two path 
+
+	obsolute path and relative path 
+
+File Attributes (properties of files and directory) ls -l
+	File name
+	File type
+	Permission
+	File size
+	File location
+	file date
+	file Owner
+
+example
+-rw-r--r--. 1 root root   30 Sep 22 14:54 test.sh
+drwxr-xr-x. 2 root root    6 Sep 12 13:34 Videos
+
+first field is called access permissions
+file access permsiions 
+directory access permission
+
+----------
+
+10 bits
+
+First bit 
+
+- --regular file
+d --directory 
+l --symbolic link files
+b --Block special devices(HDD)
+c --Character special devices (tty), com ports
+p --pipe files
+s --socket files
+
+link count ( the file will have only one link)
+	first link of direactory will point itself
+	sencond link will point to its parent directory
+
+next 3 bits for owner
+next 3 bits for the group owner
+next 3 bits fro others
+
+user ownership
+group ownership
+
+size of the file  - ls -lh it will provide you the user readable format 
+
+date and time stamp 
+
+file name
+
+
+
+package management system 
+
+Ubuntu/Debian - apt = advance packaging tools
+
+apt-get  (install, ugrade, remove and modify packages)
+apt-cache(search packages. available, information)
+
+redhat/centos - yum/dnf
+
+SLES - yast
+
+
+apt-cache search python
+apt-cache search python | wc -l
+apt-cache show python3
+
+
+; command chaining , we can alos use &
+
+list package list will be in /etc/pdt - source-list
+
+vim -x text.txt
+password
+
+useradd - without home dir and default shell is sh
+
+adduser
+
+usermod
+
+userdel
+
+passwd
+
+
+groupadd
+
+groupmod
+
+groupdel
+
+gpasswd
+
+
+/etc/passwd - user's information
+
+/etc/shadow -  user's password information
+
+/etc/group - group information
+
+/etc/gshadow -  group password
+
+
+
+0-999 - system accounts or service accounts
+
+1000 - 60000 --- user accounts and Group accounts
+
+user configuration files 
+
+/etc/login.defs
+/etc/default/useradd
+/etc/profile
+
+visudo
+
+/etc/sudovers
+
+id user ( to know the uid,gid and group)
+
+gpasswd -a user sudo ( to change group of the user)
+
+sudo -l ( used to the previlage of the user)
+
+sudo useradd -m -d /opt/user -s /bin/bash user
+
+chage -l user ( to the check the expairy of the user account)
+
+chage user ( update expairy and password validy info)
+
+groupadd groupname
+
+gpasswd -a groupname
+gpasswd -M user,user,user groupname
+
+vi /etc/gpasswd	
+
+gpasswd -d user groupname
+
+
+shell scripting 
+
+
+for users in user1 user2 user3
+do
+useradd $users
+echo redhat | passwd --stdin $users
+done
+
+
+` used to defind the users 
+for users 'cat users'; do userdel -r $users; done
+
+
+Access Permissions:
+
+read(r)
+write(w)
+execute(x)
+
+Access Levels:
+
+users(u)
+groups(g)
+others(o)
+all(a) - ugo
+
+there two types of mode we can provide the permissions.
+
+Symbolic mode or obsolute mode
+
+
+advanced file permissions
+
+set user id(s) = 4 -- owners field 
+set group id(s) = 2 -- group-owners field 
+Sticky bit(t) = 1 -- other field 
+
+stat file/direactory ( to see the permssions for the file or dir)
+
+umask ( it provide the file and directory security)
+
+Super-users(root)
+
+umask=022
+
+all regular users
+
+umask =002
+
+
+the above detsil will be configured in /etc/profile 
+
+
+providing right permssion for other (chmod o+w file)
+
++ to add
+- to remove
+= overright
+
+chmod o= file (other have no permissions)
+chmod ugo=rw file(user,group and others will read and right permssions) ugo or a
+
+chmod 600 file 
+
+ls -Rl dir (see all the subdirectry with permssions.
+
+mkdir -p india/tamilnadu/ambur/pavithran
+
+chmod 750 india -R ( to apply the same permission for chils dir)
+
+Regular expression 
+
+ls ?? (dir with 2 char)
+ls ??? (dir with 3 char)
+ls *.txt (file with .txt with any name)
+ls ??.txt ( file with 2 char with txt extension)
+ls *.?? ( file with any 2 chat extension)
+
+ls file[1-2]
+
+? = number of char
+* = any char
+[] = range
+{} = multiple
+
+! and ^ except, wildcard
+ls file[!1-2]
+ls file[^1-2]
+
+touch file{1,2,3}.txt
+
+chmod user file.txt
+
+chgrp groupname file.txt
+
+chgrp groupname file.txt ; chmod 660 file.txt
+
+chown user.group file.txt
+
+through ACL we can provide the user based or user specific permssion.
+
+setfacl -m u:username:r file.txt
+setfacl -m u:username:rw file.txt
+setfacl -m u:username:--- file.txt
+
+getfacl file.txt
+
+first ACL permission will be applied the the file or dir permssion will be applied 
+
+

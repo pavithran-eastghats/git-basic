@@ -1,0 +1,63 @@
+Shell Scripting 
+
+Process Management
+
+1. How to Monitor an system - 70% of the is Monitoring an system/infra.
+2. Health State issue. IO opreration.
+	Subsystem - CPU , RAM(Primary Memory), Disk Storage and Network ( Encapsulated, Encripted, Source packet, Destination packet, How it is travled in the network medium)
+3. Monitoring tool. ( Nagios, Splunk, ELK Stack, Icinga, Ganglia, Zabbix, Sensu)
+	Comparison and Best Use Cases
+		-Nagios, Icinga, Zabbix: Ideal for infrastructure and network monitoring. Choose these tools if you're looking for detailed, agent-based or agentless monitoring for servers, network devices, and applications.
+		-Splunk, ELK Stack: Focused on log management and analytics. Best for environments where log analysis, SIEM, and security are essential.
+		-Ganglia: Specialized for high-performance computing environments like clusters.
+		-Sensu: For dynamic, cloud-native environments with modern DevOps practices and infrastructure as code.
+4. Nagios - in Linux most important. Alert will send based on the Thrushold configuration. 
+
+Process Commend
+
+TOP 		= Dynamic
+ps -ef 		= static info fromt he PID table 
+
+
+
+TOP 
+shift M - sort by memory
+h - help in top 
+k - kill the process
+r - change the prority 
+top -cd1 ( process with com line - d is delay. Setting every 1 sec tge screen should referesh)
+top -b > top.txt
+
+ps -ef | grep -i python
+
+process stat 16
+
+kill -l
+kill -9 pid ( you can alos kiil the login session)
+
+ps -eo pid,pmem
+
+python manage.py runserver & ( this & symbol to check is anyting running in the background)
+
+bg ( anything running in the background)
+
+du -sh path ( to the size of yhr path)
+
+standard input >            0
+
+ex ls -l > cat test.txt
+
+standard output <           1
+
+ex cat < test.txt           
+
+standard error 2> 			2
+
+
+shell scripting example
+
+ cat >test.txt
+Hello, This is an test 
+
+cat test.txt | tee test2.txt | sed 's/Hello/hi' > test2.txt
+
