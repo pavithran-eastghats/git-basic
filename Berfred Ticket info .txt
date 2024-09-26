@@ -1,0 +1,196 @@
+INC0036698 - Omnigage failed emails - This is related to SES - Omni Need to perovide the timimg to have a call to check 
+
+
+30/04/2024
+HI Team,
+
+Can you please ask Omni for the Availability for a call to discuss on this, As they have mentioned that this is related to SES issue on the customer Aws Env. To check we need the assistance from Omni.
+
+Regards,
+Pavithran Ambur Venkatesan
+----------------------------------------------------------------------------------------------------------
+
+INC0036624 - Space bar isn't working when typing an email in Omningage #233031
+
+30/04/2024 12:43:39
+
+Omni need to provide me the update on this request.
+
+--------------------------------------------------------------------------------------------------------
+INC0036392 - BFIT 229273 - Omningage RDS DB Access - Omni Rds in not reachable. ########################################
+
+29/04/2024
+
+Hi Team,
+We need a call with betfred network team to check this issue further. SDM is checking on this.
+Regards
+SANJAY S
+--------------------------------------------------------------------------------------------------------
+
+INC0036625 - Chats randomly ending in Omningage #233032 -  Betfred IT team need to provide an update on the AWS suggestions.
+
+AWS Suggestion
+
+"Is it possible to reproduce this issue to collect the HAR log [2]? If reproducing an issue is possible, then we can also confirm there was any issue network issue due to which disconnect happened.
+For example, performing some tests to recreate the issue by doing this:
+- One agent connected as a customer on internet connection 1
+- another person accepts chat as agent on internet connection 2
+- Get engaged on the chat for certain duration, then disable internet connection 1.
+
+** If you notice same behavior, then it could be possible that there was a network issue on the customer end."
+
+
+29/04/2024 12:21:29
+Hi Craig/Thomas,
+Is there any update on below ?
+Regards
+SANJAY S
+
+--------------------------------------------------------------------------------------------------------
+
+***INC0036787 - WeConnect - Chat bot not recognising a post code #234083
+
+Sanjay will be sendign an update to AWS with the screenshot of the issue which is stimulated in Lex, There no logging is enable, aws need to Verify that this (WF9 4TB) POST code is allows with the Amazon.AlphaNumaric input type 
+
+-------------------------------------------------------------------------------------------------------------
+
+INC0036623 - Emails unable to be cleared or answered in Omningage #233030 - Omni Need to update
+
+-------------------------------------------------------------------------------------------------------------------
+INC0036660 - BFIT-233252 Error when answering a chat and attempting to send an email -  Omni Need to update
+
+----------------------------------------------------------------------------------------------------
+INC0036720 - Omningage - When typing a message the system deletes the text #232908 - Omni's updated "Being planned for the next release".
+
+-----------------------------------------------------------------------------------------------------------------
+
+INC0036325 - BFIT #231319 Omningage issues connecting chats  - 
+
+Kailyn - Need to confirm for closer. as there is no update
+
+------------------------------------------------------------------------------------------------------------
+
+INC0036733 - Omningage Dashboard not updating #233649 ########################################
+
+30/04/2024 13:35:33
+HI Team,
+
+Our SDM Will schedule a call with Betfred Network team and Omni to find the RCA for this issue.
+
+Regards,
+Pavithran Ambur Venkatesan
+
+---------------------------------------------------------------------------------------------------
+
+INC0036650 - BFIT-233233 Chat Message Character Limit Issue - Omni need to update on this.
+
+-----------------------------------------------------------------------------------------------------
+
+INC0035564 - BFIT223004 - Omningage dashboard - ########################################
+
+24/04/2024 11:40:50
+Hi Craig,
+Thanks for the update. Actually omni is asking if the traffic from your network is reaching the Omningage VPC (192.168.0.0). So currently we can see this route(192.168.0.0) is removed by someone previously in the transit gateway. If you permit us to add Omni's network route in the transit gateway we can allow it. Then the call prod route(10.222.0.0) will be discovered to Omni. Only 10.30.0.0 is the network which is currently discovered to Omni for the baston host.
+Regards
+SANJAY S
+
+--------------------------------------------------------------------------------------------------------
+
+INC0035363  - ITVX - Knowledgebase reporting chart error
+
+----------------------------------------------------------------------------------------
+
+INC0036795 - 234119 - Omningage - Emails in Interaction Explorer Don't Display a Subject - Betfred need to update on Omni's response
+
+-----------------------------------------------------------------------------------------------
+
+INC0036636 - Omningage Issues #233109 -  the screen was becoming 3D for them, making it difficult to speak to the customer. - Omni Need to update on this.
+
+-----------------------------------------------------------------------------------------------------
+
+INC0036627 - FW: AWS Transcribe Output - FCC -  Provided the Solution to convert, Pat to update on this.
+
+-----------------------------------------------------------------------------------------------------
+
+INC0036593 - BFIT-232853 Agent Monitoring New Contact Issue - Omningage 2.9.2 - Betfred to update on the AWS test case.
+
+-----------------------------------------------------------------------------------------------------------
+
+INC0036626 - Text deleting when typiing in Omningage #233035 - Omni's updated "Being planned for the next release".
+
+-----------------------------------------------------------------------------------------------------------------------
+
+INC0036630 - BFIT-232958 Customer attachments not dowloading - Downloading works, Betfred need to confirm for closer.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+INC0036643 - 233174 - Active Chat Message Sound / Active Chat Ended Sound - Betfred need to update if any further assitance need on this. And still issue persist or not.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Pavithran Ambur Venkatesan
+===========================
+
+
+INC0036672 - BFIT 233309 - Omningage - Minimum character limit on templates - Omni Need to provide the update
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+INC0036646 - 233174 - Chat Pending Acceptance Immediately Being Recorded As Missed - Omni Need to provide the update
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+INC0036644 -  233174 - Active Chat Window Is Completely Blank Once Ended - This will be fixed in this release
+
+30/04/2024 08:14:03
+Comments from Case to Incident : Hi Jay,
+We have forwarded Thomas the CR for this case, thank you.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+INC0036642 - 233174 - Email Pending Acceptance Sound Overlapping 
+
+29/04/2024 10:46:06
+Comments from Case to Incident : Hi Thomas,
+Thank you for confirming, is there anything else you require or may we go ahead with closure of this ticket, thank you.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+INC0036592 - BFIT-232846 Chat Template Formatting Issue -  This will be fixed in this release
+
+30/04/2024 08:14:25
+Comments from Case to Incident : Hi Jay,
+We have forwarded Thomas the CR for this case, thank you.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+INC0036588 - BFIT-232849 Email Address Formats in chat - Betfred need to confirm for closer, Hope this is fixed in the last release
+
+29/04/2024 11:10:17
+Comments from Case to Incident : Hi Liam
+
+I wanted to follow up on the [inquiry/issue] you recently contacted us about. It seems we haven't received a response from you.
+
+If you still require assistance or have any questions, please don't hesitate to reach out to us.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+INC0036249 - BFIT #225897 Replies to emails directing to wrong address -  selfexclution@betfred.com - Omni Need to update on this ticket.
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+RITM0015034 - Betfred - Upgrade to 2.9.2 - Betfred need to provide the update.
+
+
+23/04/2024 07:28:39
+Comments from Case to RITM : Good Day,
+Omningage has confirmed completion of this change request please confirm whether we can go ahead with resolving this ticket, thank you.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Conclution:
+
+
+The below ticket were needed a call with Betfred N/W and Omni also us
+INC0036392 - BFIT 229273 - Omningage RDS DB Access - Omni Rds in not reachable., 
+INC0036733 - Omningage Dashboard not updating #233649 
+INC0035564 - BFIT223004 - Omningage dashboard 
+
